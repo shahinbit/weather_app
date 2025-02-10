@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Material+Icons&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><span class="material-icons">wb_sunny</span> Weather App <span class="material-icons">wb_sunny</span></h1>
+        <div class="search-bar">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="getWeather"><span class="material-icons">search</span> Get Weather</button>
+        </div>
+        <div id="weatherInfo" class="weather-info"></div>
+        <button id="saveArea" class="save-button"><span class="material-icons">save</span> Save Area</button>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364814.47011109093!2d89.3321284!3d23.7706693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b0e5e4d8f9%3A0xf68b13f992e8659!2sBangladesh!5e0!3m2!1sen!2sbd!4v1611159525762!5m2!1sen!2sbd"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div id="weatherPoll" class="weather-poll">
+            <h3>What's the weather like in your area?</h3>
+            <form id="pollForm">
+                <input type="text" id="pollCity" placeholder="Enter your city">
+                <button type="button" id="submitPoll"><span class="material-icons">send</span> Submit</button>
+            </form>
+            <div id="pollResults"></div>
+        </div>
+        <!-- AdMob Banner Ad -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-6838566521597973~6248859949"
+             data-ad-slot="1167089504"
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <!-- AdMob SDK Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-app-pub-6838566521597973~6248859949",
+        enable_page_level_ads: true
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
